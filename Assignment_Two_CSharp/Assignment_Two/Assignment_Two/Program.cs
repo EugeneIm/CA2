@@ -14,7 +14,10 @@ namespace Assignment_Two
             menu.MainChoices();
             OrgDetails org = new OrgDetails();
             org.OrganizationDetails();
-
+            AllEmployees emp = new AllEmployees();
+            emp.listEmployees();
+            OrgInfo OI = new OrgInfo();
+            OI.OrgSpecifics();
         }
     }
 }

@@ -25,18 +25,27 @@ namespace Assignment_Two
             
             try
             {
-                int option = Convert.ToInt32(Console.Read());
-                if (Convert.ToInt32(option) == 1)
+                int option = Convert.ToInt32(Console.ReadLine());
+                if (option == 1)
                 { 
+                    Console.Clear();
                     OrgDetails org = new OrgDetails();
                     org.OrganizationDetails();
                 }
-                if (Convert.ToInt32(option) == 2)
+                else if (option == 2)
                 { 
+                    Console.Clear();
                     AllEmployees AE = new AllEmployees();
                     AE.listEmployees();
                 }
+                else if (option == 3)
+                { 
+                    Console.Clear();
+                    OrgInfo OI = new OrgInfo();
+                    OI.OrgSpecifics();
+                }
             }
+
             catch(Exception e)
             {
                 Console.WriteLine(e.Message);
@@ -79,5 +88,91 @@ namespace Assignment_Two
         Console.ReadLine();
         Console.Clear();
         }
+    }
+    class OrgInfo
+    {
+        public OrgInfo()
+        { 
+        }
+
+        public void OrgSpecifics()
+        { 
+            Console.WriteLine("ORGANIZATION SELECTION");
+            Console.WriteLine("");
+
+            Console.WriteLine("Please enter the organization name:");
+            Console.WriteLine("1) Apple");
+            Console.WriteLine("2) Google");
+            Console.WriteLine("3) IBM");
+            Console.WriteLine("4) Microsoft");
+
+            Console.WriteLine("");
+            Console.Write("Please enter a selection: ");
+
+            int choice = Convert.ToInt32(Console.ReadLine());
+            Console.Clear();
+
+            try
+            { 
+                if (choice == 1)
+                { 
+                    Console.WriteLine("====================================");
+                    Console.WriteLine("Organization:    Apple");
+                    Console.WriteLine("State:           California");
+                    Console.WriteLine("City:            Cupertino");
+                    Console.WriteLine("Timezone:        Pacific Standard Time");
+                    Console.WriteLine("====================================");
+
+                    Console.WriteLine("");
+                    Console.WriteLine("EMPLOYEES");
+                    Console.WriteLine("");
+                }
+                else if (choice == 2)
+                { 
+                    Console.WriteLine("====================================");
+                    Console.WriteLine("Organization:    Google");
+                    Console.WriteLine("State:           California");
+                    Console.WriteLine("City:            Mountainview");
+                    Console.WriteLine("Timezone:        Pacific Standard Time");
+                    Console.WriteLine("====================================");
+
+                    Console.WriteLine("");
+                    Console.WriteLine("EMPLOYEES");
+                    Console.WriteLine("");
+                }
+                else if (choice == 3)
+                { 
+                    Console.WriteLine("====================================");
+                    Console.WriteLine("Organization:    IBM");
+                    Console.WriteLine("State:           New York");
+                    Console.WriteLine("City:            Armonk");
+                    Console.WriteLine("Timezone:        Eastern Standard Time");
+                    Console.WriteLine("====================================");
+
+                    Console.WriteLine("");
+                    Console.WriteLine("EMPLOYEES");
+                    Console.WriteLine("");
+                }
+                else
+                { 
+                    Console.WriteLine("====================================");
+                    Console.WriteLine("Organization:    Microsoft");
+                    Console.WriteLine("State:           Washington");
+                    Console.WriteLine("City:            Remond");
+                    Console.WriteLine("Timezone:        Pacific Standard Time");
+                    Console.WriteLine("====================================");
+
+                    Console.WriteLine("");
+                    Console.WriteLine("EMPLOYEES");
+                    Console.WriteLine("");
+                }
+            }
+            catch (Exception e)
+            { 
+                Console.WriteLine(e.Message);
+            }
+        }
+
+
     }
 }
