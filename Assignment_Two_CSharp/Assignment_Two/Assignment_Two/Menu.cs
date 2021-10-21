@@ -172,7 +172,5 @@ namespace Assignment_Two
                 Console.WriteLine(e.Message);
             }
         }
-
-
     }
 }
