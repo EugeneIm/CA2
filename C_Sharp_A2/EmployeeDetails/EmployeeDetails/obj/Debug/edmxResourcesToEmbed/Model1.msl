@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EmployeeDetailModelStoreContainer" CdmEntityContainer="EmployeeDetailEntities">
+    <EntitySetMapping Name="Certifications">
+      <EntityTypeMapping TypeName="EmployeeDetailModel.Certification">
+        <MappingFragment StoreEntitySet="Certification">
+          <ScalarProperty Name="certificate" ColumnName="certificate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departments">
+      <EntityTypeMapping TypeName="EmployeeDetailModel.Department">
+        <MappingFragment StoreEntitySet="Department">
+          <ScalarProperty Name="departmentID" ColumnName="departmentID" />
+          <ScalarProperty Name="departmentName" ColumnName="departmentName" />
+          <ScalarProperty Name="organizationName" ColumnName="organizationName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="EmployeeDetailModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="employeeID" ColumnName="employeeID" />
+          <ScalarProperty Name="firstName" ColumnName="firstName" />
+          <ScalarProperty Name="lastName" ColumnName="lastName" />
+          <ScalarProperty Name="departmentID" ColumnName="departmentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Languages">
+      <EntityTypeMapping TypeName="EmployeeDetailModel.Language">
+        <MappingFragment StoreEntitySet="Language">
+          <ScalarProperty Name="verbalSkill" ColumnName="verbalSkill" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Organizations">
+      <EntityTypeMapping TypeName="EmployeeDetailModel.Organization">
+        <MappingFragment StoreEntitySet="Organization">
+          <ScalarProperty Name="organizationName" ColumnName="organizationName" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="state" ColumnName="state" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Regions">
+      <EntityTypeMapping TypeName="EmployeeDetailModel.Region">
+        <MappingFragment StoreEntitySet="Region">
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="timezone" ColumnName="timezone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="EmployeeCertification" TypeName="EmployeeDetailModel.EmployeeCertification" StoreEntitySet="EmployeeCertification">
+      <EndProperty Name="Certification">
+        <ScalarProperty Name="certificate" ColumnName="certificate" />
+      </EndProperty>
+      <EndProperty Name="Employee">
+        <ScalarProperty Name="employeeID" ColumnName="employeeID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="EmployeeLanguage" TypeName="EmployeeDetailModel.EmployeeLanguage" StoreEntitySet="EmployeeLanguage">
+      <EndProperty Name="Employee">
+        <ScalarProperty Name="employeeID" ColumnName="employeeID" />
+      </EndProperty>
+      <EndProperty Name="Language">
+        <ScalarProperty Name="verbalSkill" ColumnName="verbalSkill" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

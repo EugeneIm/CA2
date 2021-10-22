@@ -1,0 +1,12 @@
+\\Mac\Home\Desktop\C_Sharp_A2\EmployeeDetails\EmployeeDetails\bin\Debug\EmployeeDetails.exe.config
+\\Mac\Home\Desktop\C_Sharp_A2\EmployeeDetails\EmployeeDetails\bin\Debug\EmployeeDetails.exe
+\\Mac\Home\Desktop\C_Sharp_A2\EmployeeDetails\EmployeeDetails\bin\Debug\EmployeeDetails.pdb
+\\Mac\Home\Desktop\C_Sharp_A2\EmployeeDetails\EmployeeDetails\bin\Debug\EntityFramework.dll
+\\Mac\Home\Desktop\C_Sharp_A2\EmployeeDetails\EmployeeDetails\bin\Debug\EntityFramework.SqlServer.dll
+\\Mac\Home\Desktop\C_Sharp_A2\EmployeeDetails\EmployeeDetails\bin\Debug\EntityFramework.xml
+\\Mac\Home\Desktop\C_Sharp_A2\EmployeeDetails\EmployeeDetails\bin\Debug\EntityFramework.SqlServer.xml
+\\Mac\Home\Desktop\C_Sharp_A2\EmployeeDetails\EmployeeDetails\obj\Debug\EmployeeDetails.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\C_Sharp_A2\EmployeeDetails\EmployeeDetails\obj\Debug\EmployeeDetails.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\C_Sharp_A2\EmployeeDetails\EmployeeDetails\obj\Debug\EmployeeDetails.csproj.CopyComplete
+\\Mac\Home\Desktop\C_Sharp_A2\EmployeeDetails\EmployeeDetails\obj\Debug\EmployeeDetails.exe
+\\Mac\Home\Desktop\C_Sharp_A2\EmployeeDetails\EmployeeDetails\obj\Debug\EmployeeDetails.pdb
